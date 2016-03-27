@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" build-on-make="true" name="Spring-Training:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="Spring-Training.war">
-      <element id="artifact" artifact-name="Spring-Training:war exploded" />
-    </root>
-  </artifact>
-</component>
