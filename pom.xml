@@ -59,7 +59,6 @@
     </dependencies>
 
     <build>
-        <finalName>Spring-Training</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
