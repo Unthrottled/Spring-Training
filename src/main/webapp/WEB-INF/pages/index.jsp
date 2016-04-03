@@ -1,5 +1,5 @@
 <html>
 <body>
-	<h1>Bird == ${message}</h1>
+	<h1>${word}</h1>
 </body>
 </html>
