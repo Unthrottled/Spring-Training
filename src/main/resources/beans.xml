@@ -15,6 +15,23 @@
         <constructor-arg value="AyyLmao"/>
     </bean>
 
+    <bean id="asdfTemplate" abstract="true">
+        <property name="referenceOne" value="Die Potato"/>
+        <property name="referenceTwo" value="Desmond The Moon Bear"/>
+        <property name="referenceThree" value="You're getting mugged, kid."/>
+    </bean>
+
+    <bean id="tomSka" class="space.cyclic.reference.ASDFReferences" parent="asdfTemplate">
+        <property name="referenceOne" value="Not today."/>
+        <property name="referenceTwo" value="How did I get here?"/>
+    </bean>
+
+    <bean id="darkSquidge" class="space.cyclic.reference.ASDFReferences" parent="asdfTemplate">
+        <property name="referenceThree" value="No, you're getting mugged."/>
+    </bean>
+
+    <bean id="theGovernmentIsBees" class="space.cyclic.reference.ASDFReferences" parent="asdfTemplate"/>
+
     <bean class="space.cyclic.reference.TrainingBeanPostProcess"/>
 
 </beans>
