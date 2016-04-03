@@ -1,4 +1,4 @@
-package space.cyclic.reference;
+package space.cyclic.reference.pojo;
 
 public class ASDFReferences {
     private String referenceOne;

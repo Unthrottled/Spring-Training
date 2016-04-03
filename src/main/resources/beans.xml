@@ -7,11 +7,11 @@
         default-init-method="afterPropertiesSet"
         default-destroy-method="destroy">
 
-    <bean id="wordBean" class="space.cyclic.reference.WordBean">
+    <bean id="wordBean" class="space.cyclic.reference.pojo.WordBean">
         <property name="word" value="Bird"/>
     </bean>
 
-    <bean id="bestWordBean" class="space.cyclic.reference.WordBean">
+    <bean id="bestWordBean" class="space.cyclic.reference.pojo.WordBean">
         <constructor-arg value="AyyLmao"/>
     </bean>
 
@@ -21,16 +21,27 @@
         <property name="referenceThree" value="You're getting mugged, kid."/>
     </bean>
 
-    <bean id="tomSka" class="space.cyclic.reference.ASDFReferences" parent="asdfTemplate">
+    <bean id="tomSka" class="space.cyclic.reference.pojo.ASDFReferences" parent="asdfTemplate">
         <property name="referenceOne" value="Not today."/>
         <property name="referenceTwo" value="How did I get here?"/>
     </bean>
 
-    <bean id="darkSquidge" class="space.cyclic.reference.ASDFReferences" parent="asdfTemplate">
+    <bean id="darkSquidge" class="space.cyclic.reference.pojo.ASDFReferences" parent="asdfTemplate">
         <property name="referenceThree" value="No, you're getting mugged."/>
     </bean>
 
-    <bean id="theGovernmentIsBees" class="space.cyclic.reference.ASDFReferences" parent="asdfTemplate"/>
+    <bean id="theGovernmentIsBees" class="space.cyclic.reference.pojo.ASDFReferences" parent="asdfTemplate"/>
+
+    <bean id="carRemote" class="space.cyclic.reference.pojo.RemoteControl">
+        <property name="battery">
+            <bean class="space.cyclic.reference.pojo.AAA">
+                <constructor-arg name="brand" value="Duracell"/>
+                <constructor-arg name="type" value="Duracell"/>
+                <constructor-arg name="voltage" value="5d"/>
+                <constructor-arg name="charge" value="0.98d"/>
+            </bean>
+        </property>
+    </bean>
 
     <bean class="space.cyclic.reference.TrainingBeanPostProcess"/>
 
